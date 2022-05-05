@@ -24,10 +24,9 @@ let package = Package(
             path: "Sources/GSKStretchyHeaderViewSPM"),
         .target(
             name: "GSKStretchyHeaderViewObjC",
-            dependencies: [],
-            path: "Sources/GSKStretchyHeaderViewObjC"),
+            dependencies: []),
         .testTarget(
             name: "GSKStretchyHeaderViewSPMTests",
-            dependencies: ["GSKStretchyHeaderViewSPM"]),
+            dependencies: ["GSKStretchyHeaderViewSPM", "GSKStretchyHeaderViewObjC"]),
     ]
 )
